@@ -7,4 +7,4 @@ hfutoj(合肥工业大学oj代码C++实现)
 
 Java实现：[同学的GitHub](https://github.com/KivenLing/HFUTOJ) 
 
-!![啦啦啦](123)
+!![啦啦啦](https://github.com/muinocriz/hfutoj/blob/master/hfut.jpg)
