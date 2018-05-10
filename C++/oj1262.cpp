@@ -1,31 +1,45 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
     int t,i;
-    string a,b,c,d;
-    string s;
+    int a,b,c,d;
+    int x,y,w,z;
     cin >> t;
     while(t--)
     {
         cin >> a >> b >> c >> d;
-        s=a+b+c+d;
-        string ans[12] = {"1230","1203","0213","2013","2310","2301","0321",
-                          "3021","3120","3102","0123","1032"
-                         };
-        int flag=0;
-        for(i=0; i<12; i++)
+        x=a;
+        y=b;
+        z=c;
+        w=d;
+        while(true)
         {
-            if(s == ans[i])
+            if(a==0)
+                swap(a,b);
+            else if(b == 0)
+                swap(b,d);
+            else if(c == 0)
+                swap(a,c);
+            else
+                swap(d,c);
+            if(a==1&&b==2&&c==3&&d==0)
             {
-                flag=1;
+                cout << "YES" <<endl;
+                break;
+            }
+            if(x==a&&y==b&&z==c&&w==d)
+            {
+                cout << "NO" << endl;
                 break;
             }
         }
-        if(flag)
-            cout << "YES" << endl;
-        else
-            cout << "NO" << endl;
+
+
     }
-    return 0;
+
+
+return 0;
+
 }
